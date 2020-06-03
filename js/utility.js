@@ -11,3 +11,8 @@ function fnWelcometoOurCharity(){
 	document.getElementById("welcomeToOurCharity").innerHTML+=welcomeText;
 	return true;
 }
+
+function fnDisableList(){
+	document.getElementById("mainMenu").style.display="none";
+	return true;
+}
