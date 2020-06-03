@@ -13,7 +13,8 @@ function fnWelcometoOurCharity(){
 }
 
 function fnDisableList(){
-	document.getElementById("mainMenu").style.display="none";
+	//document.getElementById("mainMenu").style.display="none";
+	document.getElementById("mainMenu").click();
 	return true;
 }
 
