@@ -16,3 +16,26 @@ function fnDisableList(){
 	document.getElementById("mainMenu").style.display="none";
 	return true;
 }
+
+function fnAboutUs(){
+	jumpTo("btnAboutUs");
+	//document.getElementById("mainMenu").style.display="none";
+	return true;
+}
+
+function getPosition(element) {
+        var e = document.getElementById(element);
+        var left = 0;
+        var top = 0;
+
+        do {
+            left += e.offsetLeft;
+            top += e.offsetTop;
+        } while (e = e.offsetParent);
+
+        return [left, top];
+    }
+
+    function jumpTo(id) {
+        window.scrollTo(getPosition(id));
+    }
