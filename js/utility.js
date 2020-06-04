@@ -5,23 +5,6 @@ var welcomeText = "We are trying to groom a society, which encourages Sadaqah, e
 	    welcomeText =  welcomeText + "Scroll below to see our causes. "+"<br/>"+"<br/>";
 		
 		
-// When the user scrolls the page, execute fnStaticHeader
-window.onscroll = function() {fnStaticHeader()};
-
-// Get the header
-var header = document.getElementById("headerContent");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function fnStaticHeader() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
 	               
 	
 
@@ -37,26 +20,3 @@ function fnDisableList(){
 	return true;
 }
 
-
-function fnAboutUs(){
-	jumpTo("btnAboutUs");
-	//document.getElementById("mainMenu").style.display="none";
-	return true;
-}
-
-function getPosition(element) {
-        var e = document.getElementById(element);
-        var left = 0;
-        var top = 0;
-
-        do {
-            left += e.offsetLeft;
-            top += e.offsetTop;
-        } while (e = e.offsetParent);
-
-        return [left, top];
-    }
-
-    function jumpTo(id) {
-        window.scrollTo(getPosition(id));
-    }
