@@ -3,6 +3,25 @@ var welcomeText = "We are trying to groom a society, which encourages Sadaqah, e
     welcomeText =  welcomeText + "Currently, we are actively working in the area of eduction, skill development, healthcare and social awareness."+"<br/>"+"<br/>";
 	
 	    welcomeText =  welcomeText + "Scroll below to see our causes. "+"<br/>"+"<br/>";
+		
+		
+// When the user scrolls the page, execute fnStaticHeader
+window.onscroll = function() {fnStaticHeader()};
+
+// Get the header
+var header = document.getElementById("headerContent");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function fnStaticHeader() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
 	               
 	
 
@@ -17,6 +36,7 @@ function fnDisableList(){
 	document.getElementById("mainMenu").click();
 	return true;
 }
+
 
 function fnAboutUs(){
 	jumpTo("btnAboutUs");

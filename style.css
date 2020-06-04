@@ -40,9 +40,38 @@ a:hover, a:active {
 /*--------------------------------------------------------------
 # Site Header
 --------------------------------------------------------------*/
-.site-header {
-	position: fixed;
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+/*
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
 }
+*/
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+/*
+.sticky + .body-content {
+  padding-top: 102px;
+}
+*/
+
+div.header-content{
+ /* position: fixed;*/
+  width: 100%;
+  top: 0;
+  z-index: 1;
+}
+
+.site-header{
+  position: fixed;
+  background: #FFFFFF;
+  width: 100%;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+}
+
 /*
 # Header Bar
 --------------------------------*/
@@ -50,6 +79,7 @@ a:hover, a:active {
     background: #ff4800;
     color: #fff;
 }
+
 
 /*
 # Header Bar Email
@@ -184,7 +214,7 @@ a:hover, a:active {
     margin: 0;
     background: #fff;
     list-style: none;
-    overflow-x: scroll;
+    /*overflow-x: scroll; */
     transition: all 0.35s;
 }
 
@@ -215,7 +245,7 @@ a:hover, a:active {
         max-width: 100%;
         height: auto;
         padding: 0;
-        overflow: auto;
+        /*overflow: auto;*/
         background: transparent;
     }
 
