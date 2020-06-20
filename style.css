@@ -261,6 +261,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 .hero-slider {
     max-height: 820px;
+	height: 100vh;
 }
 
 .hero-content-wrap {
