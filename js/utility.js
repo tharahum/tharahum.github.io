@@ -20,3 +20,10 @@ function fnDisableList(){
 	return true;
 }
 
+function fnScrollDown(){
+	//debugger;
+	element = document.getElementById('causes-page');
+    element.scrollIntoView();
+	return true;
+}
+

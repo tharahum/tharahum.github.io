@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     color: #262626;
     font-size: 16px;
@@ -224,7 +228,7 @@ a:hover, a:active {
         max-width: 100%;
         height: auto;
         padding: 0;
-        overflow: auto;
+        /*overflow: auto;*/
         background: transparent;
     }
 
@@ -773,6 +777,7 @@ ul.tabs-nav .tab-nav.active {
     background: url("images/welcome-bg.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
+    height: 100vh;
 }
 
 .home-page-welcome::after {
@@ -1009,6 +1014,7 @@ ul.tabs-nav .tab-nav.active {
     background: url("images/cause-bg.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
+    height: 100vh;
 }
 
 .our-causes::after {
