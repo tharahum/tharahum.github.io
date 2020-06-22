@@ -41,6 +41,9 @@ a:hover, a:active {
     list-style: none;
 }
 
+main-div {
+}
+
 /*--------------------------------------------------------------
 # Site Header
 --------------------------------------------------------------*/
@@ -1014,7 +1017,7 @@ ul.tabs-nav .tab-nav.active {
     background: url("images/cause-bg.jpg") no-repeat center;
     background-size: cover;
     z-index: 99;
-    height: 100vh;
+    /*height: 100vh;*/
 }
 
 .our-causes::after {

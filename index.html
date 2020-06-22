@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   <div id="mainDiv" class="main-div">
     <header class="site-header">
         <div class="top-header-bar">
             <div class="container">
@@ -81,8 +82,8 @@
         </div><!-- .nav-bar -->
     </header><!-- .site-header -->
     
-	<div  class="body-content" id="bodyContent">
-      <div id="home" class="swiper-container hero-slider" >
+	<div class="body-content" id="bodyContent">
+      <div onscroll="fnScrollDown() id="home" class="swiper-container hero-slider">
         <div class="swiper-wrapper">
             <div class="swiper-slide hero-content-wrap">
                 <img src="images/hero.jpg" alt="">
@@ -566,6 +567,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
             </div><!-- .container -->
         </div><!-- .footer-bar -->
     </footer><!-- .site-footer -->
+</div> <!--maindiv-->
 
     <script type='text/javascript' src='js/jquery.js'></script>
     <script type='text/javascript' src='js/jquery.collapsible.min.js'></script>
